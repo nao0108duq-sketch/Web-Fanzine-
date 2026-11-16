@@ -1,9 +1,202 @@
+
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
-	min-height: 100%;
+    min-height: 100%;
 }
 
 body {
-	margin: 0;
-	background: url("assets/fondoinicio.png") center / cover no-repeat fixed;
+    margin: 0;
+
+    background: url("assets/fondoinicio.png") center / cover no-repeat fixed;
+
+    min-height: 100vh;
+}
+
+
+.escenario {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    padding: 25px 12px;
+
+    background: transparent;
+}
+
+
+.revista-contenedor {
+    width: min(94vw, 920px);
+    height: min(76vh, 620px);
+    min-height: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#book {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.page {
+    background-color: #fffaf3;
+    color: #292929;
+
+    border: 1px solid #ddd3c5;
+    overflow: hidden;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    position: relative;
+}
+
+
+.page h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.page h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.page p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.imagen-revista {
+    width: 100%;
+    max-height: 260px;
+
+    object-fit: cover;
+    margin: 15px 0;
+}
+
+
+.portada {
+    background: linear-gradient(145deg, #29243b, #745b78);
+    color: white;
+}
+
+.portada-contenido {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portada h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.portada .edicion {
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+
+.portada .subtitulo {
+    font-size: 15px;
+}
+
+
+
+.contraportada {
+    background: #29243b;
+    color: white;
+}
+
+
+
+.numero {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #888;
+}
+
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controles button {
+    background: rgba(255, 255, 255, 0.9);
+    color: #29243b;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 12px 22px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.controles button:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 600px) {
+
+    .revista-contenedor {
+        width: 94vw;
+        height: 68vh;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .page h2 {
+        font-size: 23px;
+    }
+
+    .page p {
+        font-size: 13px;
+    }
+
+    .controles button {
+        padding: 10px 15px;
+    }
 }
