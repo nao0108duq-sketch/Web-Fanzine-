@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const revista = new St.PageFlip(elementoRevista, {
 
         // Tamaño de cada página
-        width: 460,
-        height: 620,
+        width: 705,
+        height: 591,
 
 
         size: "stretch",
         minWidth: 280,
-        maxWidth: 460,
+        maxWidth: 705,
         minHeight: 320,
-        maxHeight: 620,
+        maxHeight: 591,
 
         // Configuración visual
         showCover: true,
