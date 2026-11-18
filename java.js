@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Configuración visual
         showCover: true,
+        startPage: 0,
         maxShadowOpacity: 0.35,
         mobileScrollSupport: false,
         usePortrait: true
