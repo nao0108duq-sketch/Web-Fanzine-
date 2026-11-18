@@ -125,6 +125,12 @@ body {
     color: white;
 }
 
+.contraportada .portada-contenido h2 {
+    font-family: "Lucidity Condenced", "Lucidity Condensed", Impact, "Arial Narrow", sans-serif;
+    font-size: 52px;
+    text-transform: uppercase;
+}
+
 
 
 .numero {
@@ -144,7 +150,8 @@ body {
     gap: 15px;
 }
 
-.controles button {
+.controles button,
+.controles a {
     background: rgba(255, 255, 255, 0.9);
     color: #29243b;
 
@@ -159,7 +166,12 @@ body {
     transition: 0.3s;
 }
 
-.controles button:hover {
+.controles a {
+    text-decoration: none;
+}
+
+.controles button:hover,
+.controles a:hover {
     background: white;
     transform: translateY(-2px);
 }
@@ -185,7 +197,8 @@ body {
         font-size: 13px;
     }
 
-    .controles button {
+    .controles button,
+    .controles a {
         padding: 10px 15px;
     }
 }

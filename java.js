@@ -37,6 +37,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // ESTO ES PARA CARGAR LAS PAGINAS DE LA REVISTA
     revista.loadFromHTML(paginas);
 
+    const botonPrimerArtista = document.getElementById("primer-artista");
+
+    function actualizarBotonPrimerArtista() {
+        botonPrimerArtista.hidden = revista.getCurrentPageIndex() !== paginas.length - 1;
+    }
+
+    revista.on("flip", actualizarBotonPrimerArtista);
+    actualizarBotonPrimerArtista();
+
     // BOTÓN ANTERIOR
     const botonAnterior = document.getElementById("anterior");
 
