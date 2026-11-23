@@ -17,11 +17,61 @@
                         class="portada-imagen"
                     >
                 </div>
-                <div class="page" aria-label="Página 2"><span class="numero">2</span></div>
-                <div class="page" aria-label="Página 3"><span class="numero">3</span></div>
-                <div class="page" aria-label="Página 4"><span class="numero">4</span></div>
-                <div class="page" aria-label="Página 5"><span class="numero">5</span></div>
-                <div class="page contraportada" data-density="hard" aria-label="Contraportada"></div>
+                <div class="page pagina-video" aria-label="Página 2">
+                    <video
+                        id="video-pagina-2"
+                        class="video-doble-pagina video-doble-pagina-izquierda"
+                        playsinline
+                        preload="auto"
+                        aria-label="Video que ocupa las páginas 2 y 3"
+                        hidden
+                    >
+                        <source src="assets%20pagina%202/videopagina2y3.mp4" type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+                    <button id="reproducir-video" class="reproducir-video" type="button" hidden>
+                        Reproducir con sonido
+                    </button>
+                    <span class="numero">2</span>
+                </div>
+                <div class="page pagina-video" aria-label="Página 3">
+                    <video
+                        id="video-pagina-3"
+                        class="video-doble-pagina video-doble-pagina-derecha"
+                        playsinline
+                        preload="auto"
+                        muted
+                        aria-hidden="true"
+                        tabindex="-1"
+                        hidden
+                    >
+                        <source src="assets%20pagina%202/videopagina2y3.mp4" type="video/mp4">
+                    </video>
+                    <span class="numero">3</span>
+                </div>
+                <div class="page" aria-label="Página 4">
+                    <img
+                        src="assets%20pagina%202/imagen2pag2.jpg"
+                        alt="Imagen de la página 4"
+                        class="pagina-imagen-completa"
+                    >
+                    <span class="numero">4</span>
+                </div>
+                <div class="page" aria-label="Página 5">
+                    <img
+                        src="assets%20pagina%202/imagen3pag2.jpg"
+                        alt="Imagen de la página 5"
+                        class="pagina-imagen-completa"
+                    >
+                    <span class="numero">5</span>
+                </div>
+                <div class="page contraportada" data-density="hard" aria-label="Contraportada">
+                    <img
+                        src="assets%20pagina%202/contraportadapag2.jpg"
+                        alt="Contraportada de la segunda revista"
+                        class="pagina-imagen-completa"
+                    >
+                </div>
             </div>
         </div>
 
@@ -29,6 +79,7 @@
             <button id="anterior" type="button">← Anterior</button>
             <button id="siguiente" type="button">Siguiente →</button>
             <a href="index.html">Volver al inicio</a>
+            <a id="pagina-3" href="pag3.html" hidden>Ir a página 3</a>
         </nav>
     </main>
 

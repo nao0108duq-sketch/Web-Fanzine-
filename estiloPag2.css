@@ -36,13 +36,50 @@ body {
     height: 100%;
 }
 
+.video-doble-pagina {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.video-doble-pagina-derecha {
+    left: -100%;
+}
+
+.stf__wrapper.--portrait .video-doble-pagina {
+    left: 0;
+    width: 100%;
+}
+
+.reproducir-video {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #29243b;
+    cursor: pointer;
+}
+
 .page {
     position: relative;
     background-color: #fffaf3;
     border: 1px solid #ddd3c5;
 }
 
-.portada-imagen {
+.pagina-video {
+    overflow: hidden;
+}
+
+.portada-imagen,
+.pagina-imagen-completa {
     position: absolute;
     inset: 0;
     width: 100%;
