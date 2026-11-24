@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera revista</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="estiloPag3.css">
+</head>
+<body class="pagina-tres">
+    <main class="escenario">
+        <div class="revista-contenedor">
+            <div id="book" aria-label="Revista de seis páginas">
+                <div class="page portada" data-density="hard" aria-label="Portada">
+                    <img
+                        src="assets%20pagina%203/fondoportada.jpg"
+                        alt="Portada de la tercera revista"
+                        class="portada-imagen"
+                    >
+                </div>
+                <div class="page pagina-artista" aria-label="Página 2">
+                    <div class="pagina-artista-contenido">
+                        <h1 class="artista-titulo animate__animated animate__fadeInDown">VETUSTA MORLA</h1>
+                        <div class="artista-marco animate__animated animate__zoomIn">
+                            <img
+                                src="assets%20pagina%203/imagen2pag3.jpg"
+                                alt="Integrantes de Vetusta Morla"
+                            >
+                        </div>
+                        <p class="artista-lema animate__animated animate__fadeInUp">
+                            LA MEJOR BANDA QUE EXISTE ;&#41;
+                        </p>
+                        <span class="artista-flecha" aria-hidden="true">↘</span>
+                    </div>
+                    <span class="numero">2</span>
+                </div>
+                <div class="page pagina-editorial" aria-label="Página 3">
+                    <div class="editorial-contenido">
+                        <h2 class="editorial-titulo animate__animated animate__backInDown">
+                            LA BANDA A LA QUE SIEMPRE<br>QUIERO VOLVER
+                        </h2>
+                        <img
+                            src="assets%20pagina%203/imagen3pag3.jpg"
+                            alt="Vetusta Morla en concierto"
+                            class="editorial-imagen-principal animate__animated animate__lightSpeedInLeft"
+                        >
+                        <img
+                            src="assets%20pagina%203/imagen31pag3.jpg"
+                            alt="Concierto de Vetusta Morla"
+                            class="editorial-imagen-secundaria animate__animated animate__fadeInRight"
+                        >
+                        <p class="editorial-texto animate__animated animate__fadeInUp">
+                            Vetusta Morla es una banda española de indie rock formada en 1998 en Tres Cantos, Madrid,
+                            por un grupo de amigos que compartían su pasión por la música. Después de varios años
+                            de conciertos y proyectos independientes, en 2008 publicaron su primer álbum,
+                            Un día en el mundo, con el que comenzaron a ganar reconocimiento dentro de la escena
+                            musical española. A partir de ahí llegaron discos como Mapas (2011), La deriva (2014),
+                            Mismo sitio, distinto lugar (2017), Cable a tierra (2021) y Figurantes (2024).
+                        </p>
+                    </div>
+                    <span class="numero">3</span>
+                </div>
+                <div class="page pagina-impacto" aria-label="Página 4">
+                    <div class="impacto-contenido">
+                        <img
+                            src="assets%20pagina%203/imagen4pag3.jpg"
+                            alt="Vetusta Morla"
+                            class="impacto-imagen animate__animated animate__tada"
+                        >
+                        <h2 class="impacto-titulo animate__animated animate__tada">
+                            LO QUE TE HACE GRANDE
+                        </h2>
+                        <p class="impacto-texto animate__animated animate__tada">
+                            Hay bandas que escuchas por una canción y otras que terminan convirtiéndose en
+                            parte de tu vida. Desde hace 8 años, Vetusta Morla es de esas últimas.
+                            No sé muy bien cómo explicar lo que me gusta de esta banda. Es todo, la manera en
+                            que sus temas parecen contar historias, la voz de Juan "Pucho", que puede hacerme
+                            escuchar por horas, el ritmo, estilo único, no se simplemente es la banda que me
+                            hace sentir, y convertir sentimientos, recuerdos, miedos y hasta pequeñas
+                            contradicciones de la vida en canciones.
+                        </p>
+                    </div>
+                    <span class="numero">4</span>
+                </div>
+                <div class="page pagina-album" aria-label="Página 5">
+                    <div class="album-contenido">
+                        <div class="album-ficha animate__animated animate__flipInX">
+                            <h2 class="album-marca animate__animated animate__pulse">vetusta morla</h2>
+                            <img
+                                src="assets%20pagina%203/imagen5pag3.png"
+                                alt="Vetusta Morla"
+                                class="album-imagen animate__animated animate__zoomIn"
+                            >
+                            <p class="album-texto animate__animated animate__rubberBand">
+                                SU PROXIMO ALBUM:<br><strong>LO IMPORTANTE</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <span class="numero">5</span>
+                </div>
+                <div class="page contraportada" data-density="hard" aria-label="Contraportada">
+                    <img
+                        src="assets%20pagina%203/gifcontraportada.gif"
+                        alt="Animación de la contraportada"
+                        class="contraportada-gif"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <nav class="controles" aria-label="Controles de la revista">
+            <button id="anterior" type="button">← Anterior</button>
+            <button id="siguiente" type="button">Siguiente →</button>
+            <a href="pag2.html">Volver a página 2</a>
+            <a id="siguiente-artista" href="pag4.html" hidden>Siguiente artista</a>
+        </nav>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+    <script src="javaPag3.js"></script>
+</body>
+</html>
