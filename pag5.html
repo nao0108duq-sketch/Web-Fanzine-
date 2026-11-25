@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta página</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="escenario escenario-pag5">
+        <h1 class="titulo-mas-artistas">Mas artistas</h1>
+        <section class="reproductor-musica" aria-label="Reproductor de música">
+            <img
+                id="portada-cancion"
+                class="portada-cancion"
+                src="assets%20pagina%205/1-imagencrimen.jpg"
+                alt="Portada de Crimen"
+            >
+            <div class="informacion-cancion">
+                <h2 id="titulo-cancion">Crimen</h2>
+                <p id="artista-cancion">Gustavo Cerati</p>
+            </div>
+            <div class="progreso-cancion">
+                <input id="barra-progreso" type="range" min="0" max="0" value="0" step="1" aria-label="Progreso de la canción">
+                <div class="tiempos-cancion">
+                    <span id="tiempo-actual">0:00</span>
+                    <span id="duracion-cancion">0:00</span>
+                </div>
+            </div>
+            <div class="controles-reproductor">
+                <button id="cancion-anterior" class="boton-salto" type="button" aria-label="Canción anterior">⏮</button>
+                <button id="reproducir-pausar" class="boton-reproducir" type="button" aria-label="Reproducir">▶</button>
+                <button id="cancion-siguiente" class="boton-salto" type="button" aria-label="Siguiente canción">⏭</button>
+            </div>
+            <p id="estado-reproductor" class="estado-reproductor" role="status" aria-live="polite"></p>
+            <audio id="audio-cancion" preload="metadata"></audio>
+        </section>
+    </main>
+    <script src="javaPag5.js"></script>
+</body>
+</html>

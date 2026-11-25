@@ -6,16 +6,38 @@
     <title>Cuarta revista</title>
     <link rel="stylesheet" href="estiloPag3.css">
 </head>
-<body>
+<body class="pagina-cuatro">
+    <audio id="audio-pagina-cuatro" src="assets%20pagina%204/Milo%20J%20-%20Record%C3%A9.mp3" loop autoplay></audio>
+
     <main class="escenario">
         <div class="revista-contenedor">
             <div id="book" aria-label="Revista de seis páginas">
-                <div class="page portada" data-density="hard" aria-label="Portada"></div>
-                <div class="page" aria-label="Página 2"><span class="numero">2</span></div>
-                <div class="page" aria-label="Página 3"><span class="numero">3</span></div>
-                <div class="page" aria-label="Página 4"><span class="numero">4</span></div>
-                <div class="page" aria-label="Página 5"><span class="numero">5</span></div>
-                <div class="page contraportada" data-density="hard" aria-label="Contraportada"></div>
+                <div class="page portada portada-pagina-cuatro" data-density="hard" aria-label="Portada"></div>
+                <div class="page pagina-imagen-pag4" aria-label="Página 2">
+                    <img src="assets%20pagina%204/1.png" alt="Imagen de la página 2">
+                    <span class="numero">2</span>
+                </div>
+                <div class="page pagina-imagen-pag4" aria-label="Página 3">
+                    <img src="assets%20pagina%204/2.png" alt="Imagen de la página 3">
+                    <span class="numero">3</span>
+                </div>
+                <div class="page pagina-imagen-pag4" aria-label="Página 4">
+                    <img src="assets%20pagina%204/3.png" alt="Imagen de la página 4">
+                    <span class="numero">4</span>
+                </div>
+                <div class="page pagina-imagen-pag4" aria-label="Página 5">
+                    <img src="assets%20pagina%204/gifpag4.gif" alt="GIF de la página 5">
+                    <a
+                        class="boton-tiny-desk"
+                        href="https://www.youtube.com/watch?v=p7YpVl35pac&amp;list=RDp7YpVl35pac&amp;start_radio=1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Visitar Tiny desk</a>
+                    <span class="numero">5</span>
+                </div>
+                <div class="page contraportada contraportada-pagina-cuatro" data-density="hard" aria-label="Contraportada">
+                    <img src="assets%20pagina%204/imagen8pag4.jpg" alt="Contraportada de la cuarta revista">
+                </div>
             </div>
         </div>
 
@@ -23,10 +45,27 @@
             <button id="anterior" type="button">← Anterior</button>
             <button id="siguiente" type="button">Siguiente →</button>
             <a href="pag3.html">Volver a página 3</a>
+            <a id="ir-pagina-5" href="pag5.html" hidden>Siguiente artista</a>
         </nav>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
     <script src="javaPag3.js"></script>
+    <script>
+        const audioPaginaCuatro = document.getElementById("audio-pagina-cuatro");
+
+        function reproducirAudioPaginaCuatro() {
+            audioPaginaCuatro.play().catch(function () {});
+        }
+
+        window.addEventListener("DOMContentLoaded", reproducirAudioPaginaCuatro);
+        document.addEventListener("pointerdown", reproducirAudioPaginaCuatro, { once: true });
+        document.addEventListener("keydown", reproducirAudioPaginaCuatro, { once: true });
+
+        window.addEventListener("pagehide", function () {
+            audioPaginaCuatro.pause();
+            audioPaginaCuatro.currentTime = 0;
+        });
+    </script>
 </body>
 </html>

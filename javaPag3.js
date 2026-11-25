@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     revista.loadFromHTML(paginas);
 
     const botonSiguienteArtista = document.getElementById("siguiente-artista");
+    const botonPaginaCinco = document.getElementById("ir-pagina-5");
 
     function reiniciarAnimacion(elemento) {
         elemento.classList.remove("animate__animated");
@@ -51,8 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function actualizarBotonSiguienteArtista() {
+        const enContraportada = revista.getCurrentPageIndex() === paginas.length - 1;
         if (botonSiguienteArtista) {
-            botonSiguienteArtista.hidden = revista.getCurrentPageIndex() !== paginas.length - 1;
+            botonSiguienteArtista.hidden = !enContraportada;
+        }
+        if (botonPaginaCinco) {
+            botonPaginaCinco.hidden = !enContraportada;
         }
     }
 
@@ -70,4 +75,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("siguiente").addEventListener("click", function () {
         revista.flipNext();
     });
+
 });

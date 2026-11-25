@@ -32,6 +32,125 @@ body {
     background: transparent;
 }
 
+.titulo-mas-artistas {
+    margin: 0;
+    color: #1ed760;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(42px, 8vw, 88px);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    text-align: center;
+    -webkit-text-stroke: 2px #111;
+    paint-order: stroke fill;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.65);
+}
+
+.escenario-pag5 {
+    justify-content: flex-start;
+    padding-top: 5vh;
+}
+
+.reproductor-musica {
+    width: min(390px, 100%);
+    margin: auto;
+    padding: 22px;
+    border-radius: 22px;
+    background: #121b38;
+    color: #fff;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.42);
+}
+
+.portada-cancion {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.informacion-cancion {
+    margin-top: 18px;
+}
+
+.informacion-cancion h2,
+.informacion-cancion p {
+    margin: 0;
+}
+
+.informacion-cancion h2 {
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.informacion-cancion p {
+    margin-top: 5px;
+    color: #c4c9d8;
+    font-size: 15px;
+}
+
+.progreso-cancion {
+    margin-top: 20px;
+}
+
+#barra-progreso {
+    display: block;
+    width: 100%;
+    height: 5px;
+    accent-color: #1ed760;
+    cursor: pointer;
+}
+
+.tiempos-cancion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    color: #c4c9d8;
+    font-size: 12px;
+}
+
+.controles-reproductor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 18px;
+}
+
+.controles-reproductor button {
+    border: 0;
+    cursor: pointer;
+}
+
+.boton-salto {
+    padding: 8px;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+}
+
+.boton-reproducir {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #1ed760;
+    color: #101629;
+    font-size: 23px;
+}
+
+.boton-salto:hover,
+.boton-reproducir:hover {
+    transform: scale(1.08);
+}
+
+.estado-reproductor {
+    min-height: 16px;
+    margin: 12px 0 0;
+    color: #ffb4ab;
+    font-size: 12px;
+    text-align: center;
+}
+
 
 .revista-contenedor {
     width: min(96vw, 1410px);
@@ -179,6 +298,15 @@ body {
 
 
 @media (max-width: 600px) {
+
+    .escenario-pag5 {
+        padding: 4vh 16px 20px;
+    }
+
+    .reproductor-musica {
+        width: min(350px, 100%);
+        padding: 18px;
+    }
 
     .revista-contenedor {
         width: 94vw;
