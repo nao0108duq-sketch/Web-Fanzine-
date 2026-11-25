@@ -18,3 +18,18 @@ Para mi proyecto final, quiero explorar artistas o canciones especificas que han
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/a26aec46-0525-4be9-8408-da79bd4e3a44" />
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/21b0014e-6b69-4dc9-a3cc-6c5ddea7732b" />
 
+## PROCESO / BITACORA
+
+Intente que cada commit fuera de una página con un artista en específico.
+
+## Commit Rosalía
+Creé la pagina 2 dedicada a Rosalía. Agregué imágenes, algunas páginas las diseñe primero en canva para facilitar el proceso. Agregue contenido biográfico y un texto más personal sobre mi admiración por la cantante. Como requisito, agregue un video que ocupa dos páginas de la revista, buscando que la experiencia fuera más visual.
+
+## Commit Vetusta Morla
+Añadí una nueva pagina dedicada a Vetusta Morla, con imágenes, información sobre su trayectoria y un texto personal sobre lo que significa su música para mí. Como requisito agregue un GIF en la contraportada y utilicé la librería Animate.css, que permite aplicar diferentes animaciones a los títulos, imágenes y textos cuando se abre la revista.
+
+## Commit Milo J
+Desarrollé una nueva pagina para Milo J, igualmente con imágenes, textos sobre su música y una pequeña reseña personal. Esta vez como requisito agregué una canción de fondo (Recordé), que acompaña la lectura, y un hipervínculo externo para visitar su presentación en Tiny Desk. La idea fue complementar el contenido con elementos que permitieran acercarse un poco más al artista.
+
+## Commit Reproductor de música 
+Finalmente, creé la pagina 5 que regresa a la idea de inspiración en spotify con un reproductor de música. Agregué las portadas de los álbumes, nombres de canciones y artistas, además de controles para reproducir, pausar, avanzar y regresar. Con JavaScript programé una lista de canciones que se mezclan aleatoriamente, de modo que cada vez que se presiona el botón de siguiente aparece una canción diferente. También incorporé una barra de progreso y la duración de cada canción. (con la ayuda de la IA porque no tenia ni idea de como hacerlo.
